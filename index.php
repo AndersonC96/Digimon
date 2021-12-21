@@ -53,7 +53,7 @@
                 <div class="col-md-3"></div>
             </div>
             <?php
-                include 'search/pesquisar_digimon.php';
+                include './search.php';
                 include 'search/result_pesq_digimon.php';
             ?>
         </div>

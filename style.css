@@ -1,0 +1,75 @@
+.container-fluid h3{
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+    font-style: oblique;
+}
+.container-fluid{
+    position: relative;
+    top: 25px;
+}
+.container-fluid label{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.pesqNome{
+    background-color: rgb(74, 138, 190);
+    border-radius: 15px;
+}
+.pesqNivel{
+    background-color: rgb(145, 145, 145);
+    border-radius: 15px;
+}
+.result_pesq_nome{
+    position: relative;
+    top: 80px !important;
+    text-align: center;
+}
+.result_pesq_nome img{
+    width: 20%;
+    height: 180px;
+}
+.result_pesq_nome hr{
+    width: 20%;
+}
+.result_pesq_nome span{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.result_pesq_nivel{
+    position: relative;
+    top: 80px !important;
+    text-align: center;
+}
+.result_pesq_nivel img{
+    width: 40%;
+    height: 210px;
+}
+.result_pesq_nivel hr{
+    width: 20%;
+}
+.result_pesq_nivel span{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.msg-usuario{
+    position: relative;
+    top: 20px;
+    background-color: rgb(255, 96, 96);
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-right: 26.8%;
+    margin-left: 26.8%;
+    padding: 17px 0;
+}
+@media screen and (max-width: 600px){
+    .result_pesq_nome img{
+        width: 40%;
+        height: 180px;
+    }
+    .result_pesq_nivel img{
+        width: 40%;
+        height: 210px;
+    }
+}

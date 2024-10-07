@@ -1,9 +1,9 @@
 <?php
-    return [
+    $apiConfig = [
         'digimon_api_url' => 'https://digimon-api.vercel.app/api/digimon',
     ];
     $host = 'localhost';
-    $dbname = 'digimon_db';
+    $dbname = 'digimon';
     $username = 'root';
     $password = '';
     $conn = new mysqli($host, $username, $password, $dbname);

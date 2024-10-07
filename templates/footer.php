@@ -1,6 +1,8 @@
-        <footer class="container">
-            <p>&copy; 2024 Digimon Search</p>
+        <footer class="bg-dark text-light py-3">
+            <div class="container text-center">
+                <p>&copy; 2024 Digimon Search. Todos os direitos reservados.</p>
+            </div>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-zBd4YYbYdwfdqP+JaeQs9lVRFN4v91iOBytMR6ZoCbPV1f5xgpImXK5a8d0nTc2d" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

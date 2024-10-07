@@ -84,7 +84,7 @@ CREATE TABLE favoritos (
 <?php
 // Configurações de conexão ao banco de dados
 $host = 'localhost';    // Endereço do servidor do banco de dados
-$dbname = 'digimon_db';  // Nome do banco de dados
+$dbname = 'digimon';  // Nome do banco de dados
 $username = 'root';      // Nome de usuário do banco de dados
 $password = '';          // Senha do banco de dados (coloque a sua senha aqui)
 

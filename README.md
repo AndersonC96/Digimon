@@ -1,25 +1,45 @@
-# Digimon Search
+# Digimon Search Application
 
-Este projeto utiliza a API do Digimon para buscar e exibir dados sobre os digimons. É possível pesquisar por nome ou por nível.
-
-## Tecnologias utilizadas
-
-- PHP
-- CSS
-- API do Digimon
-
-## Como utilizar
-
-Para utilizar o projeto, é necessário ter acesso à API do Digimon. É possível obter mais informações sobre a API e solicitar acesso em [https://digimon-api.vercel.app/](https://digimon-api.vercel.app/).
-
-Após obter acesso à API, basta clonar o repositório e executar o projeto em um servidor web com suporte a PHP, como o Apache.
+Este é um projeto web que utiliza a **API de Digimon** para pesquisar Digimons por nome, nível e tipo. A aplicação também permite que usuários autenticados favoritem seus Digimons preferidos e acessem seus favoritos posteriormente. O projeto utiliza **PHP**, **MySQL** e **Bootstrap 5.3.3** para fornecer uma interface de usuário moderna e funcional.
 
 ## Funcionalidades
 
-- Pesquisa de digimons por nome
-- Ordenação de resultados por ordem alfabética ou por nível
-- Filtragem de resultados por tipo de digimon
+- **Pesquisa de Digimons**: Busque Digimons por nome, nível e tipo.
+- **Autenticação de Usuários**: Usuários podem se registrar e fazer login.
+- **Favoritar Digimons**: Usuários logados podem favoritar Digimons e visualizá-los em uma lista personalizada.
+- **Filtros Avançados de Pesquisa**: Pesquise Digimons por múltiplos atributos como nome, nível e tipo.
+- **Paginação**: Resultados de pesquisa são exibidos com paginação para facilitar a navegação.
+- **Cache**: Cache local para melhorar a performance e reduzir chamadas à API.
+- **Sistema de Proteção de Rotas**: Algumas funcionalidades só estão disponíveis para usuários autenticados.
 
-## Exemplo de uso
+## Tecnologias Utilizadas
 
-Para pesquisar por digimons do nível "Champion", basta pesquisar por "Champion" no campo de busca e clicar no botão "Pesquisar". Os resultados serão exibidos abaixo.
+- **PHP**: Linguagem de programação para a lógica do servidor.
+- **MySQL**: Banco de dados relacional para armazenar usuários e favoritos.
+- **Bootstrap 5.3.3**: Framework CSS para criação de uma interface responsiva e moderna.
+- **API de Digimon**: Usada para buscar dados sobre Digimons [https://digimon-api.vercel.app/](https://digimon-api.vercel.app/).
+- **JavaScript**: Para melhorar a interatividade e usabilidade do sistema.
+- **HTML/CSS**: Para a estrutura e o estilo da aplicação.
+
+## Requisitos
+
+Antes de instalar e rodar o projeto, certifique-se de ter as seguintes ferramentas instaladas:
+
+- **PHP 7.4+**
+- **MySQL** ou **MariaDB**
+- **Servidor Apache** (ou outro servidor web que suporte PHP, como XAMPP ou MAMP)
+- **Composer** (para gerenciar pacotes PHP, opcional)
+
+## Passo a Passo de Instalação
+
+### 1. Clone o Repositório
+
+Clone este repositório para o seu ambiente local usando o Git:
+
+```bash
+git clone https://github.com/seu-usuario/digimon-search.git
+```
+
+### 2. Configuração do Banco de Dados
+
+#### 1. Crie um banco de dados MySQL chamado digimon_db:

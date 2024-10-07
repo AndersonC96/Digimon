@@ -43,3 +43,7 @@ git clone https://github.com/AndersonC96/Digimon.git
 ### 2. Configuração do Banco de Dados
 
 #### 1. Crie um banco de dados MySQL chamado digimon_db:
+
+```bash
+CREATE DATABASE digimon_db;
+```

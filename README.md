@@ -45,5 +45,31 @@ git clone https://github.com/AndersonC96/Digimon.git
 #### 1. Crie um banco de dados MySQL chamado digimon_db:
 
 ```bash
-CREATE DATABASE digimon_db;
+CREATE DATABASE digimon;
+```
+
+#### 2. Importe o arquivo SQL incluído no repositório para criar as tabelas necessárias:
+
+```bash
+mysql -u root -p digimon < path/to/digimon.sql
+```
+
+Ou execute diretamente no cliente MySQL:
+
+```bash
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL,
+    data_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE favoritos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    digimon_name VARCHAR(100) NOT NULL,
+    data_adicionado TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES usuarios(id)
+);
 ```

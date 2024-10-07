@@ -1,10 +1,10 @@
 <?php
     session_start();
-    include '../config/config.php';
     if (!isset($_SESSION['user_id'])) {
         header("Location: login.php");
         exit();
     }
+    include '../config/config.php';
     $user_id = $_SESSION['user_id'];
     $sql = "SELECT digimon_name, data_adicionado FROM favoritos WHERE user_id = ?";
     $stmt = $conn->prepare($sql);
@@ -28,4 +28,6 @@
         <div class="alert alert-info">Você ainda não favoritou nenhum Digimon.</div>
     <?php endif; ?>
 </div>
-<?php include '../templates/footer.php'; ?>
+<?php
+    include '../templates/footer.php';
+?>

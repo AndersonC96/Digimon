@@ -162,3 +162,28 @@ Na página principal, os usuários podem buscar Digimons utilizando os seguintes
 - Nome do Digimon: Pesquisa direta pelo nome.
 - Nível do Digimon: Selecione entre níveis como "Rookie", "Champion", "Mega", etc.
 - Tipo do Digimon: Filtre por tipo como "Vaccine", "Virus", "Data", etc.
+
+#### 2. Registro e Login
+
+- Usuários podem se registrar com nome de usuário, e-mail e senha.
+- Depois de logados, os usuários têm acesso a funcionalidades exclusivas, como favoritar Digimons.
+
+#### 3. Favoritar Digimons
+
+- Usuários logados podem favoritar Digimons diretamente nos resultados da pesquisa.
+- A lista de favoritos pode ser acessada através da página de "Favoritos".
+
+#### 4. Proteção de Rotas
+
+- As páginas como Favoritos são protegidas e só podem ser acessadas por usuários autenticados.
+
+#### 5. Melhorias e Funcionalidades Futuras
+
+- Integração de testes automatizados com PHPUnit.
+- Paginação aprimorada para melhorar a navegação em grandes volumes de resultados.
+- Melhorias na interface do usuário com animações e transições mais suaves.
+
+#### 6. Problemas Conhecidos
+
+- Dependendo da instabilidade da API, as respostas podem demorar a carregar.
+- O sistema de cache ainda pode ser refinado para suportar mais endpoints.

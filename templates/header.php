@@ -12,7 +12,14 @@
     </head>
     <body>
         <header class="bg-dark text-light py-3">
-            <div class="container">
-                <h1 class="text-center">Bem-vindo ao Digimon Search</h1>
+            <div class="container d-flex justify-content-between align-items-center">
+                <h1>Bem-vindo ao Digimon Search</h1>
+                <nav>
+                    <?php if (isset($_SESSION['user_id'])): ?>
+                    <a href="logout.php" class="btn btn-danger">Logout</a>
+                    <?php else: ?>
+                    <a href="login.php" class="btn btn-primary">Login</a>
+                    <?php endif; ?>
+                </nav>
             </div>
         </header>

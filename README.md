@@ -123,7 +123,7 @@ http://localhost/digimon-search/public/index.php
 
 #### 2. Após o registro, faça login para acessar as funcionalidades como favoritar Digimons.
 
-### 7. Estrutura de Diretórios
+## Estrutura de Diretórios
 
 ```bash
 /digimon-search
@@ -153,7 +153,7 @@ http://localhost/digimon-search/public/index.php
 └── digimon_db.sql        # Arquivo SQL para criação do banco de dados
 ```
 
-### 8. Funcionalidades do Sistema
+## Funcionalidades do Sistema
 
 #### 1. Pesquisa de Digimons
 

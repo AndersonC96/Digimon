@@ -159,6 +159,6 @@ http://localhost/digimon-search/public/index.php
 
 Na página principal, os usuários podem buscar Digimons utilizando os seguintes filtros:
 
-• Nome do Digimon: Pesquisa direta pelo nome.
-• Nível do Digimon: Selecione entre níveis como "Rookie", "Champion", "Mega", etc.
-• Tipo do Digimon: Filtre por tipo como "Vaccine", "Virus", "Data", etc.
+- Nome do Digimon: Pesquisa direta pelo nome.
+- Nível do Digimon: Selecione entre níveis como "Rookie", "Champion", "Mega", etc.
+- Tipo do Digimon: Filtre por tipo como "Vaccine", "Virus", "Data", etc.

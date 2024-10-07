@@ -73,3 +73,31 @@ CREATE TABLE favoritos (
     FOREIGN KEY (user_id) REFERENCES usuarios(id)
 );
 ```
+
+### 3. Configuração do Servidor Web
+
+#### 1. Coloque o projeto no diretório raiz do seu servidor web (por exemplo, htdocs no XAMPP).
+
+#### 2. No arquivo config/config.php, configure as informações de conexão ao banco de dados:
+
+```bash
+<?php
+// Configurações de conexão ao banco de dados
+$host = 'localhost';    // Endereço do servidor do banco de dados
+$dbname = 'digimon_db';  // Nome do banco de dados
+$username = 'root';      // Nome de usuário do banco de dados
+$password = '';          // Senha do banco de dados (coloque a sua senha aqui)
+
+// Criar uma conexão com o banco de dados usando MySQLi
+$conn = new mysqli($host, $username, $password, $dbname);
+
+// Verificar se a conexão falhou
+if ($conn->connect_error) {
+    die("Conexão com o banco de dados falhou: " . $conn->connect_error);
+}
+
+// Configurações da API
+$apiConfig = [
+    'digimon_api_url' => 'https://digimon-api.vercel.app/api/digimon',
+];
+```

@@ -2,40 +2,36 @@
     include '../templates/header.php';
 ?>
 <div class="container-fluid">
-    <h3>Encontre o seu digimon!</h3>
-    <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-3 pesqNome">
-            <form action="" method="POST">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-12 col-form-label">Nome do digimon: </label>
-                            <div class="input-group col-md-12">
-                                <input type="text" class="form-control" name="txtDigimon" required>
-                                <input type="submit" name="btn_pesq_nome" class="btn btn-primary" value="Pesquisar">
-                            </div>
+    <h3 class="text-center">Encontre o seu digimon!</h3>
+    <div class="row justify-content-center my-4">
+        <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+                <h5 class="card-title">Buscar por Nome</h5>
+                <form action="" method="POST">
+                    <div class="form-group">
+                        <label for="nomeDigimon">Nome do Digimon:</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="nomeDigimon" name="txtDigimon" required>
+                            <button type="submit" name="btn_pesq_nome" class="btn btn-primary ms-2">Pesquisar</button>
                         </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
-        <div class="col-md-3 pesqNivel">
-            <form action="" method="POST">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-12 col-form-label">Nível do digimon:</label>
-                            <div class="input-group col-md-12">
-                                <input type="text" class="form-control" name="txtNivel" required>
-                                <input type="submit" name="btn_pesq_nivel" class="btn btn-primary" value="Pesquisar">
-                            </div>
+        <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+                <h5 class="card-title">Buscar por Nível</h5>
+                <form action="" method="POST">
+                    <div class="form-group">
+                        <label for="nivelDigimon">Nível do Digimon:</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="nivelDigimon" name="txtNivel" required>
+                            <button type="submit" name="btn_pesq_nivel" class="btn btn-primary ms-2">Pesquisar</button>
                         </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
-        <div class="col-md-3"></div>
     </div>
     <?php
         include '../src/search.php';

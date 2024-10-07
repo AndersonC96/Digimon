@@ -101,3 +101,64 @@ $apiConfig = [
     'digimon_api_url' => 'https://digimon-api.vercel.app/api/digimon',
 ];
 ```
+
+### 4. Configuração do Cache
+
+```bash
+mkdir cache
+chmod 777 cache
+```
+
+### 5. Acessando o Projeto
+
+#### 1. No seu navegador, acesse o projeto através do servidor web local, como por exemplo:
+
+```bash
+http://localhost/digimon-search/public/index.php
+```
+
+### 6. Registro e Login
+
+#### 1. No menu de navegação, registre-se clicando em "Registrar".
+
+#### 2. Após o registro, faça login para acessar as funcionalidades como favoritar Digimons.
+
+### 7. Estrutura de Diretórios
+
+```bash
+/digimon-search
+│
+├── /public               # Arquivos acessíveis ao público (HTML, CSS, JS, PHP principal)
+│   ├── index.php         # Página principal
+│   ├── register.php      # Página de registro de usuários
+│   ├── login.php         # Página de login de usuários
+│   ├── favoritos.php     # Página de favoritos dos usuários
+│   ├── logout.php        # Página de logout de usuários
+│   ├── style.css         # Arquivo de estilos CSS
+│   └── /cache            # Diretório de cache (para armazenar respostas da API)
+│
+├── /src                  # Código fonte (PHP classes, funções, lógica de negócio)
+│   ├── search.php        # Lógica de pesquisa e filtros
+│
+├── /templates            # Arquivos de template (páginas HTML ou PHP usadas para exibição)
+│   ├── header.php        # Cabeçalho comum
+│   ├── footer.php        # Rodapé comum
+│
+├── /config               # Arquivos de configuração
+│   └── config.php        # Configurações de banco de dados e API
+│
+├── /tests                # Testes automatizados (PHPUnit, etc.)
+├── /cache                # Diretório para cache de dados da API
+├── README.md             # Instruções do projeto
+└── digimon_db.sql        # Arquivo SQL para criação do banco de dados
+```
+
+### 8. Funcionalidades do Sistema
+
+#### 1. Pesquisa de Digimons
+
+Na página principal, os usuários podem buscar Digimons utilizando os seguintes filtros:
+
+• Nome do Digimon: Pesquisa direta pelo nome.
+• Nível do Digimon: Selecione entre níveis como "Rookie", "Champion", "Mega", etc.
+• Tipo do Digimon: Filtre por tipo como "Vaccine", "Virus", "Data", etc.

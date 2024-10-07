@@ -37,7 +37,7 @@ Antes de instalar e rodar o projeto, certifique-se de ter as seguintes ferrament
 Clone este repositório para o seu ambiente local usando o Git:
 
 ```bash
-git clone https://github.com/seu-usuario/digimon-search.git
+git clone https://github.com/AndersonC96/Digimon.git
 ```
 
 ### 2. Configuração do Banco de Dados

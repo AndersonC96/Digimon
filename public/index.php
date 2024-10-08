@@ -18,21 +18,28 @@
                             <label for="nivelDigimon" class="form-label">Nível do Digimon:</label>
                             <select class="form-select" id="nivelDigimon" name="txtNivel">
                                 <option value="">Todos</option>
-                                <option value="In Training">In Training</option>
-                                <option value="Rookie">Rookie</option>
-                                <option value="Champion">Champion</option>
+                                <option value="Armor">Armor</option>
+                                <option value="Adult">Adult</option>
+                                <option value="Baby I">Baby I</option>
+                                <option value="Baby II">Baby II</option>
+                                <option value="Child">Child</option>
+                                <option value="Hybrid">Hybrid</option>
+                                <option value="Perfect">Perfect</option>
                                 <option value="Ultimate">Ultimate</option>
-                                <option value="Mega">Mega</option>
+                                <option value="Unknown">Unknown</option>
                             </select>
                         </div>
                         <div class="col-md-4 mb-3">
                             <label for="tipoDigimon" class="form-label">Tipo do Digimon:</label>
                             <select class="form-select" id="tipoDigimon" name="txtTipo">
                                 <option value="">Todos</option>
-                                <option value="Vaccine">Vaccine</option>
-                                <option value="Virus">Virus</option>
                                 <option value="Data">Data</option>
                                 <option value="Free">Free</option>
+                                <option value="No Data">No Data</option>
+                                <option value="Unknown">Unknown</option>
+                                <option value="Vaccine">Vaccine</option>
+                                <option value="Variable">Variable</option>
+                                <option value="Virus">Virus</option>
                             </select>
                         </div>
                     </div>

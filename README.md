@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/PHP-7.4%2B-blue" alt="PHP Version">
   <img src="https://img.shields.io/badge/Bootstrap-5.3.3-blueviolet" alt="Bootstrap Version">
   <img src="https://img.shields.io/badge/MySQL-Compatible-orange" alt="MySQL Compatibility">
-  <img src="https://img.shields.io/badge/Status-Desenvolvimento-green" alt="Status">
+  <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-green" alt="Status">
 </p>
 
 ## 🌟 O que é o Digimon Search Application?
@@ -34,7 +34,7 @@ Siga os passos abaixo para configurar o projeto localmente:
 
 2. **Configuração do Banco de Dados**:
 
-- Crie um banco de dados MySQL chamado digimon_db:
+- Crie um banco de dados MySQL chamado `digimon`:
 
     ```bash
         CREATE DATABASE digimon;

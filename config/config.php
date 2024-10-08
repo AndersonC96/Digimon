@@ -1,6 +1,6 @@
 <?php
     $apiConfig = [
-        'digimon_api_url' => 'https://digimon-api.vercel.app/api/digimon',
+        'digimon_api_url' => 'https://digi-api.com/api/v1/digimon',
     ];
     $host = 'localhost';
     $dbname = 'digimon';
